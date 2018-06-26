@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 import cv2
 import time
 
@@ -13,7 +14,7 @@ time.sleep(5)
 print(img1)
 
 #extracting only red colour
-#(jis par range aplly krni hai,(starting range of colour),(ending range))
+#(starting range of colour),(ending range))
 red=cv2.inRange(img1,(0,0,0),(255,40,40))
 cv2.imshow("original",img1)
 cv2.imshow("only red",red)
